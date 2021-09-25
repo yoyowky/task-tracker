@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +9,97 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container{
+  overflow: auto;
+  border: solid grey 1px;
+  border-radius: 5px;
+  margin: 30px auto; /* 保证居中显示 */
+  max-width: 500px;
+  min-height: 300px;
+  padding: 30px;
+}
+
+.header{
+  display: flex; /* 显示在一行 */
+  justify-content: space-between; /* 两端对其 */
+  align-items: center; /* 垂直居中 */
+  margin-bottom: 20px;
+}
+
+.btn{
+  display: inline-block;
+  font-size: 15px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.btn-block{
+  width: 80%;
+  margin: 10px auto;
+  display: block;
+}
+
+.task{
+  background-color: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.task.reminder{
+  border-left: 5px solid green;
+}
+
+.task h3{
+  display: flex;
+  justify-content: space-between;
+}
+
+.task h3 .close{
+  display: inline-block;
+}
+
+.task h3 .close:hover{
+  color: red
+}
+
+.add-form{
+  margin: 20px 0;
+}
+.form-control{
+  margin: 20px 0;
+}
+.form-control label,input{
+  display: block;
+}
+.form-control input{
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+}
+.form-control.form-control-check{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-control.form-control-check label{
+  flex: 1;
+}
+
+.form-control.form-control-check input{
+  flex: 2;
+  height: 20px;
+}
+
+.form-control{
+  margin: 16px 14px;
 }
