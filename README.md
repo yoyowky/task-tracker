@@ -70,6 +70,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
+Task Tracker:
+1. Task Component
+ - When clicking on the test, the reminder(left border shown as green color) will show
+ - Close button, when cliking on close button, the task will be deleted
+2. Add Task Component
+ - Add Task Button: click on the button, the add task form will show, and the button will change color to red and text of button become to close;
+ - Add form: task, day & time, reminder input
+ - Save Task button: when click on the button, the new task will be added on the following task list
+ - if the input value is empty, there will be an alert;
+3. Footer
+ - have about link in Footer, use router to relocate to /about page
+
 Three Server:
 1. dev server: npm start
 2. production build server
@@ -90,6 +102,11 @@ https://www.npmjs.com/package/json-server
 
 Router:
 1. npm i react-router-dom
-2. 
+2. use import {BrowserRouter, Route, Link} from 'react-router-dom';
+3. BrowserRouter will be the parent tag on App component
+4. import { useLocation } from 'react-router-dom';
+   const location = useLocation();
+   location.pathname === '/' ? .. : ..
+
 
 

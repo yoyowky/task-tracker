@@ -4,7 +4,7 @@
       "id": 2,
       "text": "Math",
       "day": "Feb 6th",
-      "reminder": false
+      "reminder": true
     },
     {
       "text": "English",
@@ -13,8 +13,8 @@
       "id": 8
     },
     {
-      "text": "French",
-      "day": "Feb 18th",
+      "text": "Chinese",
+      "day": "Aug 8th",
       "reminder": false,
       "id": 9
     }
