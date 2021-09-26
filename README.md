@@ -68,3 +68,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+Three Server:
+1. dev server: npm start
+2. production build server
+ - npm run build (will generate a build folder)
+ - sudo npm i -g server
+ - serve -s build -p 8000
+3. backend server: npm run server (see below)
+
+Mock Backend:
+use json server:
+https://www.npmjs.com/package/json-server
+1. npm install -g json-server
+2. add "server": "json-server --watch db.json --port 5000" in package.json
+3. run: npm run server // will auto create db.json
+4. use fetch api to get the data in server
+ https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch
+
+
+Router:
+1. npm i react-router-dom
+2. 
+
+

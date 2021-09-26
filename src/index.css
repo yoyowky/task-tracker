@@ -103,3 +103,8 @@ code {
 .form-control{
   margin: 16px 14px;
 }
+
+footer{
+  margin: 14px auto;
+  text-align: center;
+}
